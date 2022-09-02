@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "938116903564",
+    "project_id": "memory-ga",
+    "storage_bucket": "memory-ga.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938116903564:android:88a2569f117e7b8b8b41a9",
+        "android_client_info": {
+          "package_name": "com.abdalla_mmdouh.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938116903564-d9k8uk3946rvqv2kj3kbkls3enfe4qt4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVLRzettvNAbsqaVQevk8x72OIuz5wwxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938116903564-d9k8uk3946rvqv2kj3kbkls3enfe4qt4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
