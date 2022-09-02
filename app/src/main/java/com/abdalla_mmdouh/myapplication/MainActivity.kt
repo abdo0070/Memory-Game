@@ -67,6 +67,10 @@ class MainActivity : AppCompatActivity() {
 
             val userImageList = document.toObject(UserImageList::class.java)
             if (userImageList?.images == null){
+                if (gameName == null){
+                    Toast.makeText(this@MainActivity,"This name is not Exit .",Toast.LENGTH_LONG).show()
+                    return@addOnSuccessListener
+                }
                 Log.i("TAG" , "Failed to Get Images")
                 Snackbar.make(clRoot,"Sorry We couldn't find this game",Snackbar.LENGTH_SHORT).show()
 
@@ -151,7 +155,6 @@ class MainActivity : AppCompatActivity() {
 
         })
     }
-
     private fun showLevelsDialog() {
         var boardNewSize= LayoutInflater.from(this@MainActivity).inflate(R.layout.board_size , null)
         val radioGroup = boardNewSize.findViewById<RadioGroup>(R.id.rgLevels)
@@ -164,6 +167,7 @@ class MainActivity : AppCompatActivity() {
             }
             gameName = null
             customGameImages = null
+            game() // the bug
             board()
         })
     }
